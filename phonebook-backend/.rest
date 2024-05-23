@@ -1,0 +1,14 @@
+GET http://localhost:3000/api/persons
+
+###
+POST http://localhost:3000/api/persons
+content-type: application/json
+
+{
+    "name": "Tamás Sallai",
+    "number": 123456789
+}
+
+###
+DELETE http://localhost:3000/api/persons/1
+
