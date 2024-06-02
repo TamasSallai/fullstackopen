@@ -15,7 +15,7 @@ app.use(
   morgan(':method :url :status :res[content-length] - :response-time ms :body')
 )
 
-app.get('/info', (req, res) => {
+app.get('/info', (req, res, next) => {
   Entry.find({})
     .then((result) =>
       res.send(
