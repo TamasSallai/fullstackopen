@@ -74,10 +74,10 @@ const App = () => {
           message: `Added ${createdPerson.name}`,
         })
       })
-      .catch((_) =>
+      .catch((error) =>
         setNotificationWithTimeout({
           type: 'error',
-          message: 'Cannot add person',
+          message: error.response.data.error,
         })
       )
   }
