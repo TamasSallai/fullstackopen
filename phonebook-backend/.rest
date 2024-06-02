@@ -1,6 +1,10 @@
 GET http://localhost:3000/api/persons
 
 ###
+GET http://localhost:3000/api/persons/665c46aaa27c8ef5da8575d6
+
+
+###
 POST http://localhost:3000/api/persons
 content-type: application/json
 
@@ -10,5 +14,5 @@ content-type: application/json
 }
 
 ###
-DELETE http://localhost:3000/api/persons/1
+DELETE http://localhost:3000/api/persons/665c46aaa27c8ef5da8575d6
 
